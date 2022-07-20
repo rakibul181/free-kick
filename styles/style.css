@@ -6,7 +6,7 @@ body{
     font-family: 'Poppins';
 }
 main{
-    margin: 50px 120px;
+    margin: 50px 110px;
 }
 /* ===============
 Top section start 
@@ -49,7 +49,7 @@ Top section start
 .top-btn button {
     padding: 16px 25px;
     color: #FFFFFF;
-    background-color: #DD0000;
+    background-color: rgb(11, 153, 72);
     border-radius: 5px;
     border: none;
     margin-top: 15px;
@@ -68,4 +68,77 @@ Top section start
     width: 100%;
     height: 90%;
 }
- 
+/* ===============
+Main section start 
+================== */
+.main-contant{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 24px;
+}
+.contant-nav{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    row-gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+ .contant-nav a{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #161616;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    width: 220px;
+    text-align: center;
+    padding: 17px;
+    border-radius: 10px;
+    border: none;
+ }
+ .contant-nav .active-nav{
+    color: #FFFFFF;
+    background-color: rgb(11, 153, 72);
+ }
+ #blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+ }
+ .blog{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+ }
+ .blog-img img{
+    width: 100%;
+    border-top-right-radius:5px ;
+    border-top-left-radius:5px ;
+ }
+ .blog-info{
+    padding: 20px;
+    margin: 0px;
+ }
+ .blog-info> span{
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 4px 16px;
+ }
+.blog-title{
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+
+color: #161616;
+}
+.blog-data{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
