@@ -9,9 +9,11 @@ body {
 }
 
 main {
-    margin: 50px 10%;
+    margin: 50px 8%;
 }
-#blogs,#up-match {
+
+#blogs,
+#up-match {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 24px;
@@ -26,7 +28,7 @@ Top section start
     display: flex;
     background-color: #161616;
     border-radius: 30px;
-    height: 646px;
+
 
 }
 
@@ -35,7 +37,7 @@ Top section start
 }
 
 .top-contant {
-    margin-left: 80px;
+    padding: 100px 20px 100px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +61,8 @@ Top section start
     color: #FFFFFF;
 }
 
-.top-btn button {
+.top-btn button,
+.viwe-all button {
     padding: 16px 25px;
     color: #FFFFFF;
     background-color: rgb(11, 153, 72);
@@ -123,7 +126,8 @@ Main section start
     color: #FFFFFF;
     background-color: rgb(11, 153, 72);
 }
-.contant-nav a:hover{
+
+.contant-nav a:hover {
     color: #FFFFFF;
     background-color: rgb(11, 153, 72);
 }
@@ -173,6 +177,10 @@ Main section start
     margin-left: 10px;
 }
 
+.viwe-all button {
+    display: none;
+}
+
 /*========== footer start=========== */
 footer {
     width: 80%;
@@ -204,11 +212,13 @@ hr {
     display: flex;
     justify-content: space-evenly;
 }
-.social{
+
+.social {
     width: 40%;
     display: flex;
     justify-content: space-around;
 }
+
 .social a {
     color: gray;
     font-size: 24px;
@@ -225,100 +235,190 @@ hr {
 }
 
 /* ==================Upcoming Match ================ */
-.match{
+.match {
     border: 1px solid lightgray;
     border-radius: 10px;
     padding: 50px 15px;
 }
-.team-info{
+
+.team-info {
     display: flex;
     align-items: center;
 }
-.team-img img{
+
+.team-img img {
     width: 100%;
 }
-.team-info span{
-font-weight: 700;
-font-size: 16px;
-padding: 0px 15px;
 
-color: #161616;
+.team-info span {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0px 15px;
+
+    color: #161616;
 }
-.match-info{
+
+.match-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.match-info h3{
+
+.match-info h3 {
     font-size: 18px;
 }
-.match-info span{
+
+.match-info span {
     font-weight: 400;
 }
 
 /*==================== Responsive Media Quary ===================*/
 
 @media screen and (max-width:576px) {
-    
-    main{
+
+    main {
         margin: 20px 5%;
     }
-    .top{
+
+    .top {
         flex-direction: column;
+        align-items: center;
     }
-    .top-contant{
-        margin: auto;
+
+    .top-contant {
+
+        padding: 5%;
     }
-    .top-section{
+
+    .top-section {
         width: 80%;
         align-items: center;
     }
+
     .top-heading {
         font-size: 22px;
         line-height: 33px;
         text-align: center;
     }
-    .top-text{
+
+    .top-text {
         font-size: 14px;
         width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+
     }
-    .top-img{
+
+    .top-img {
         padding-left: 5%;
-        padding-right: 6%;
+        padding-right: 5%;
+        margin-right: 0%;
         width: 90%;
         flex-direction: column;
         justify-content: flex-end;
     }
-    .main-contant{
+
+    .main-contant {
         flex-direction: column;
         align-items: center;
         row-gap: 50px;
     }
-    #blogs , #up-match{
+
+    #blogs,
+    #up-match {
         grid-template-columns: repeat(1, 1fr);
     }
-    
-    .site-name h2{
+
+    .site-name h2 {
         font-size: 24px;
     }
-    .social{
+
+    .social {
         width: 80%;
         justify-content: space-evenly;
     }
-    .footer-menu{
+
+    .footer-menu {
         flex-direction: column;
         align-items: center;
         row-gap: 10px;
     }
-   
-     
+
+
 }
+
 @media screen and (min-width:577px) and (max-width:992px) {
-    main{
-        background-color: black;
+    main {
+        margin: 20px 5%;
     }
+
+    .top {
+        column-gap: 20px;
+    }
+
+    .top-heading {
+        font-size: 40px;
+        line-height: 50px;
+
+    }
+
+    .top-text {
+        font-size: 14px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .top-img img {
+        height: 70%;
+    }
+
+    .main-contant {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .contant-nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 10px;
+        background-color: #FFFFFF;
+
+    }
+
+    .contant-nav a {
+        font-size: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid lightgray;
+    }
+
+    #blogs,
+    #up-match {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .viwe-all button {
+        display: block;
+    }
+
+    .site-name h2 {
+        font-size: 35px;
+    }
+
+    .social {
+        width: 60%;
+        justify-content: space-evenly;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
