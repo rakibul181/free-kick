@@ -1,7 +1,7 @@
-/* Googole Font */
+/*========================= Googole Font ============================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
 
-/* commom styles */
+/* ========================commom styles=============================== */
 body {
     font-family: 'Poppins';
     margin: 0;
@@ -21,9 +21,7 @@ main {
 }
 
 
-/* ===============
-Top section start 
-================== */
+/* ==========================Top section start ============================ */
 .top {
     display: flex;
     background-color: #161616;
@@ -87,9 +85,34 @@ Top section start
     height: 90%;
 }
 
-/* ===============
-Main section start 
-================== */
+/*--------- Football animation----------- */
+@keyframes dribling {
+    0% {
+        top: 550px;
+        right: 28%;
+        ;
+    }
+
+    100% {
+        right: 28%;
+        top: 150px;
+        transform: scale(.75);
+    }
+}
+
+.football {
+    position: absolute;
+    display: none;
+}
+
+.top:hover .football {
+    display: block;
+    position: absolute;
+    animation: dribling 1s ease-out 0s infinite alternate;
+    animation-play-state: running;
+}
+
+/* ============================Main section start =============================== */
 .main-contant {
     display: flex;
     align-items: flex-start;
@@ -181,7 +204,7 @@ Main section start
     display: none;
 }
 
-/*========== footer start=========== */
+/*==================================footer start============================= */
 footer {
     width: 80%;
     background-color: #161616;
@@ -234,7 +257,7 @@ hr {
     text-decoration: none;
 }
 
-/* ==================Upcoming Match ================ */
+/* =====================================Upcoming Match ================================ */
 .match {
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -272,8 +295,9 @@ hr {
     font-weight: 400;
 }
 
-/*==================== Responsive Media Quary ===================*/
+/*=============================== Responsive Media Quary ===========================*/
 
+/* small devices */
 @media screen and (max-width:576px) {
 
     main {
@@ -319,6 +343,10 @@ hr {
         justify-content: flex-end;
     }
 
+    .football {
+        display: none;
+    }
+
     .main-contant {
         flex-direction: column;
         align-items: center;
@@ -348,6 +376,7 @@ hr {
 
 }
 
+/* Medium Devices */
 @media screen and (min-width:577px) and (max-width:992px) {
     main {
         margin: 20px 5%;
@@ -374,6 +403,10 @@ hr {
 
     .top-img img {
         height: 70%;
+    }
+
+    .football {
+        display: none;
     }
 
     .main-contant {
