@@ -11,6 +11,13 @@ body {
 main {
     margin: 50px 10%;
 }
+#blogs,#up-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
 
 /* ===============
 Top section start 
@@ -116,12 +123,9 @@ Main section start
     color: #FFFFFF;
     background-color: rgb(11, 153, 72);
 }
-
-#blogs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 24px;
-    column-gap: 24px;
+.contant-nav a:hover{
+    color: #FFFFFF;
+    background-color: rgb(11, 153, 72);
 }
 
 .blog {
@@ -214,4 +218,36 @@ hr {
 .footer-menu a {
     color: #B9B9B9;
     text-decoration: none;
+}
+
+/* ==================Upcoming Match ================ */
+.match{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 50px 15px;
+}
+.team-info{
+    display: flex;
+    align-items: center;
+}
+.team-img img{
+    width: 100%;
+}
+.team-info span{
+font-weight: 700;
+font-size: 16px;
+padding: 0px 15px;
+
+color: #161616;
+}
+.match-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.match-info h3{
+    font-size: 18px;
+}
+.match-info span{
+    font-weight: 400;
 }
