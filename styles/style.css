@@ -105,12 +105,6 @@ main {
     display: none;
 }
 
-.top:hover .football {
-    display: block;
-    position: absolute;
-    animation: dribling 1s ease-out 0s infinite alternate;
-    animation-play-state: running;
-}
 
 /* ============================Main section start =============================== */
 .main-contant {
@@ -454,4 +448,14 @@ hr {
         justify-content: center;
     }
 
+}
+
+/* displing Football only lerge device using media queary */
+@media screen and (min-width:993px) {
+    .top:hover .football {
+        display: block;
+        position: absolute;
+        animation: dribling 1s ease-out 0s infinite alternate;
+        animation-play-state: running;
+    } 
 }
